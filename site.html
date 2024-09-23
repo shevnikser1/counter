@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Writing Interface</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключение CSS файла -->
+</head>
+<body>
+    <div class="container">
+        <h1>Write Your Post</h1>
+        <input type="number" id="goalInput" placeholder="Set word goal (default 150)" value="150" min="1">
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <textarea id="postArea" placeholder="Start writing..."></textarea>
+        <div class="stats">
+            <p>Word Count: <span id="wordCount">0</span></p>
+        </div>
+        <div class="controls-container">
+            <button id="themeButton">Switch to Dark Theme</button>
+            <div class="timer-controls">
+                <button id="startButton">Start Timer</button>
+                <button id="resetButton">Reset Timer</button>
+                <span id="timer">00:00</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Подключение JavaScript файла -->
+</body>
+</html>
